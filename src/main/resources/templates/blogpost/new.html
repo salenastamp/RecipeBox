@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Post a New Recipe</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Latest compiled and minified CSS -->
+	<div th:replace="/fragments/styling :: head-style" ></div>
+  </head>
+  <body>
+  <div th:replace="fragments/navbar :: navbar" ></div>
+ <div class="container">
+		<h1>Post a New Recipe</h1>
+		<p>Please tell us about your favorite recipe! You can share a link to the actual recipe and tell us what you love about it in 255 characters or less!</p>
+ 		<form action="#" th:action="@{/blogposts}" th:object="${blogPost}" method="post">
+ 		
+ 		<div class="form-group">
+ 			<input type="text" class="form-control" placeholder="Recipe Name" th:field="*{title}" />
+ 		</div>
+ 		
+ 		<div class="form-group">
+ 			<input type="text" class="form-control" placeholder="Your Name Here..." th:field="*{author}" />
+ 		</div>
+ 		<div class="form-group">
+ 			<input type="text" class = "form-control" placeholder="Recipe Link" th:field="*{link}" maxlength="255" />
+ 		</div>
+ 		<div class="form-group">
+ 			<input type="text" class ="form-control" placeholder="Recipe Description" th:field="*{blogEntry}" maxlength="255" />
+ 		</div>
+
+ 		<button class="btn btn-primary">Submit Your Recipe</button>
+</form>
+</div>
+<div th:replace="/fragments/styling :: body-links" ></div>
+  </body>
+</html>	

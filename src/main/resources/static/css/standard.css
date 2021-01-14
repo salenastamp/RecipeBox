@@ -1,0 +1,38 @@
+body{
+	background-color: #95e06c;
+	font-family: 'Noto Serif', serif;
+	color: #564124 !important;
+}
+
+.navbar-brand,
+h1 {
+	font-family: 'Fredericka the Great', cursive;
+	color: #d64933 !important;
+	font-size: 40px;
+}
+.submit,
+h2{
+	font-family: 'Noto Serif', serif;
+	color: #564124 !important;
+}
+h3 {
+	font-family: 'Fredericka the Great', cursive;
+	color: #d64933 !important;
+	font-size: 32px;
+}
+a, a:active, a:visited {
+	color: 95e06c;
+}
+.container{
+	background-color: #cef1bc;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px; 
+}
+.description{
+	padding-top: 10px;
+}
+
+/*font-family: 'Fredericka the Great', cursive;
+font-family: 'Noto Serif', serif; */
